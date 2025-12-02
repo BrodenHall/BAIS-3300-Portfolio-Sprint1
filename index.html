@@ -1,71 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Broden Hall Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broden Hall | Portfolio</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet"
+    />
+
+    <!-- Optional basic styling -->
+    <style>
+        body {
+            padding-top: 70px;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .navbar-brand {
+            font-weight: 600;
+        }
+        footer {
+            padding: 20px 0;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-       <h1>Welcome to Broden Hall's Homepage</h1>
-       <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-       </nav>
-        </header>
-        <main>
-        <section>
+    <!-- Google Analytics placeholder -->
+    <!-- Paste GA script here before pushing to Azure -->
 
-        </section id="about">
-        <section>
-            <h2>About Me</h2>
-            <p>This is the "About Me" section</p>
-        </section>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Broden Hall</a>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <section>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        </section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio, fugit molestias eveniet natus obcaecati dolore dignissimos numquam voluptatibus! Enim explicabo aperiam hic accusamus delectus obcaecati, assumenda tempora error magnam!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, enim autem doloribus odit porro harum, voluptatum voluptatibus dignissimos eius veritatis qui exercitationem ratione vero! Ab illum esse sed eligendi corrupti?</p>
-        </section>
+    <!-- HERO / INTRO -->
+    <header class="bg-light text-dark py-5 border-bottom">
+      <div class="container text-center">
+        <h1 class="fw-bold">Welcome to My Portfolio</h1>
+        <p class="lead">Business Analytics & Information Systems • University of Iowa</p>
+      </div>
+    </header>
 
-        <section id="projects">
-            <h2>Projects</h>
-            <p>This is the "Projects" section</p>
-             <article> 
-                <h3>Project 1: Personal Website</h3>
-                <p>Description: A personal website to showcase my portfolio and blog.</p>
-            </article>
-            <article>
-                <h3>Project 2: Electric Vehicle Charging Station Analysis</h3>
-                <p>Description: Analyzed 70K North American fuel stations using Python, mapping geospatial fuel type trends with pandas/matplotlib.</p>
-            </article>
-            <article>
-                <h3>Project 3: Macroeconmic Forecasting</h3>
-                <p>Decription: Built regression model (Adj. R² = 0.819) to predict Federal Funds Rate, identifying GDP & inflation as key drivers. Applied results as a decision-support tool for scenario planning and policy strategy.</p>
-            </article>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="container">
+        <h2 class="mb-4">About Me</h2>
+        <p>
+          I’m Broden Hall, a Business Analytics and Information Systems student at the 
+          University of Iowa. This portfolio showcases my coursework, projects, and 
+          professional experience in analytics, development, and digital product management.
+        </p>
+      </div>
+    </section>
 
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="bg-light">
+      <div class="container">
+        <h2 class="mb-4">Projects</h2>
 
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Brief description of project or class assignment.</p>
+              </div>
+            </div>
+          </div>
 
-       </section>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Brief description of project or class assignment.</p>
+              </div>
+            </div>
+          </div>
 
-       <section>
-            <h2>Contact</h4>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Brief description of project or class assignment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-       </section>
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <div class="container">
+        <h2 class="mb-4">Resume</h2>
+        <p>
+          You can view or download my resume below.
+        </p>
+        <a href="resume.pdf" class="btn btn-dark" target="_blank">Download Resume</a>
+      </div>
+    </section>
 
-        <sections>
-            <h2>Resume</h4>
-            <p></p>
-            <p></p>
-            <p></p>
-        </sections>
-    </main>
-    <footer>
-        <p>&copy; 2025 Broden Hall All Rights Reserved</p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <h2 class="mb-4">Contact</h2>
+        <p>Email: <a href="mailto:broden-hall@uiowa.edu">broden-hall@uiowa.edu</a></p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center">
+      <div class="container">
+        <p class="m-0">&copy; 2024 Broden Hall</p>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
